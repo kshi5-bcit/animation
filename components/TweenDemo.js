@@ -1,5 +1,6 @@
+import React from 'react';
+
 import TweenOne from 'rc-tween-one';
-import Button from 'antd/lib/button';
 import SvgMorphPlugin from 'rc-tween-one/lib/plugin/SvgMorphPlugin';
 import PropTypes from 'prop-types';
 TweenOne.plugins.push(SvgMorphPlugin);
@@ -37,7 +38,7 @@ export default class TweenDemo extends React.Component {
     );
   }
 }
-Demo.propTypes = {
+TweenDemo.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
   paused: PropTypes.bool,
